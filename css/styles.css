@@ -761,7 +761,6 @@ right: 24px;
 display: flex;
 justify-content: center;
 align-items: center;
-/* padding: 8px 8px; */
 padding: 0;
 width: 24px;
 height: 24px;
@@ -777,12 +776,12 @@ border-color var(--transition-duration-funct);
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-border-color:#404bbf;
+background-color:#404bbf;
 border: none; 
 }
 
 .close-btn-icon {
-    fill:  black;
+fill:  black;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
