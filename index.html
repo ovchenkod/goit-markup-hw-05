@@ -360,6 +360,8 @@
         </div>
       </section>
     </main>
+
+
     <footer class="social-place">
       <div class="container footer-block">
       <div class="logo-block">
@@ -404,18 +406,19 @@
       <div class="subscribe-form">
         <p class="subscribe-h">Subscribe</p>
         <form class="form-input-btn">
-          <label for="user-name"  class="subscribe-inhut"></label>
+          <label for="user-name"  class="subscribe-inhut">
           <input
           type="email"
           placeholder="E-mail"
           name="user-email"
-          class="subscribe-input">
+          class="subscribe-input"
+          id="user-name"></label>
           <span class="sub-btn-block">
             <button type="submit" class="subscribe-button">Subscribe</button>
             <svg class="subscribe-btn-icon" width="24" height="24">
               <use href="./images/icons.svg#subscribe-btn-icon"></use>
               </svg>
-            </span>
+            </span> 
         </form>
       </div>
     </div>
@@ -444,7 +447,6 @@
                 </svg>
               </div>
             </div>
-
             <div class="modal-field">
               <label for="user-tel"  class="modal-form-field">Phone</label>
               <div class="modal-input-wrapper">
@@ -459,7 +461,6 @@
               </svg>
               </div>
             </div>
-    
               <div class="modal-field">
                 <label for="user-email"  class="modal-form-field">Email</label>
                 <div class="modal-input-wrapper">
@@ -474,7 +475,6 @@
                 </svg>
               </div>
               </div>
-    
               <div class="modal-field">
                 <label for="user-comment" class="modal-form-field">Comment</label>
                 <textarea name="user-comment" 
@@ -482,7 +482,6 @@
                 class="modal-form-comment"
                 placeholder="Text input"></textarea>
               </div>
-
            <div  class="modal-field">  
               <input 
               type="checkbox" 
