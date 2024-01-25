@@ -404,6 +404,7 @@
       <div class="subscribe-form">
         <p class="subscribe-h">Subscribe</p>
         <form class="form-input-btn">
+          <label for="user-name"  class="subscribe-inhut"></label>
           <input
           type="email"
           placeholder="E-mail"
@@ -413,8 +414,9 @@
             <button tybe="submit" class="subscribe-button">Subscribe</button>
             <svg class="subscribe-btn-icon" width="24" height="24">
               <use href="./images/icons.svg#subscribe-btn-icon"></use>
+              </svg>
+            </span>
             </svg>
-          </span>
         </form>
       </div>
     </div>
@@ -423,7 +425,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
-              <svg class="close-btn-icon" width="8px" height="8px">
+              <svg class="close-btn-icon" width="8" height="8">
                 <use href="./images/icons.svg#close-btn-icon">
               </use></svg>
             </button>
@@ -461,7 +463,8 @@
             </div>
     
               <div class="modal-field">
-                <label for="user-email"  class="modal-form-field">E-mail</label>
+                <label for="user-email"  class="modal-form-field">Email</label>
+                <div class="modal-input-wrapper">
                 <input 
                 type="email" 
                 name="user-email" 
@@ -471,14 +474,14 @@
                 <svg class="modal-input-icon" width="18" height="24">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-                
+              </div>
               </div>
     
               <div class="modal-field">
-                <label for="user-commet" class="modal-form-field">Commet</label>
-                <textarea name="user-commet" 
-                id="user-commet" 
-                class="modal-form-commet"
+                <label for="user-comment" class="modal-form-field">Comment</label>
+                <textarea name="user-comment" 
+                id="user-comment" 
+                class="modal-form-comment"
                 placeholder="Text input"></textarea>
               </div>
 
@@ -491,12 +494,12 @@
               value="true"/>
               <label for="user-privacy" class="modal-form-policy">
                 <span>
-                  <svg class="modal-input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-galochka"></use>
-                </svg> 
-              </span>
-                I accept the terms and conditions of the&nbsp;
-              <a class="policy-note" href="">Privacy Policy</a></label>
+                  <svg class="modal-check-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-galoch"></use>
+                  </svg>
+                </span> I accept the terms and conditions of the&nbsp;
+                <a class="policy-note" href="">Privacy Policy</a>
+              </label>
       </div>
        <button type="submit" class="modal-form-button">Send</button>
       </form>

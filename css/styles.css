@@ -576,7 +576,6 @@ margin-right: 80px;
 
 .footer-block {
 display: flex;
-/* gap: 120px; */
 }
 
 .social-footer-title {
@@ -621,15 +620,15 @@ border-radius: 50%;
 /* SUBSCRIBE-FORM */
 
 .subscribe-form {
-    /* margin-right: auto; */
+    margin-right: auto;
 }
 
 .subscribe-h {
     margin: 0;
     padding-top: 100px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-family: inherit;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -647,16 +646,18 @@ border-radius: 50%;
     width: 264px;
     height: 40px;
     background-color: #2E2F42;;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid  #ffffff; ;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
     padding: 16px 8px;
+    padding-left: 156px;
     font-family: inherit;
     font-weight: 400;
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
     transition: border-color var(--transition-duration-funct);
     }
     
@@ -667,10 +668,12 @@ border-radius: 50%;
     
     .subscribe-button {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 8px 24px;
-    min-width: 170px;
+    min-width: 165px;
+    height: 40px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -678,7 +681,7 @@ border-radius: 50%;
     color: #FFFFFF;
     background: #4D5AE5;
     border-radius: 4px;
-    border-style: none;
+    border: none;
     outline: none;
     cursor: pointer;
     letter-spacing: 0.04em;
@@ -698,17 +701,18 @@ border-radius: 50%;
     position: relative;
         }  
     
-    .subscribe-btn-icon {
+.subscribe-btn-icon {
     position: absolute;
     top: 10px;
     left: 0;
-    margin-left: 116px;
+    margin-left: 16px;
     fill: #fff;
     transition: fill var(--transition-duration-funct),
     }
+
     
-    .subscribe-button:hover + .subscribe-btn-icon {
-        fill: #4D5AE5;
+.subscribe-button:hover + .subscribe-btn-icon {
+fill: #4D5AE5;
     }
 
 
@@ -739,8 +743,8 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+width: 408px;
 min-height: 584px; 
-height: 576px;
 background-color: #FCFCFC;
 padding: 72px 24px 24px 24px; 
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -762,10 +766,11 @@ padding: 0;
 width: 24px;
 height: 24px;
 cursor: pointer;
+border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 background-color: #E7E9FC;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/* border: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* transition: border-color var(--transition-duration-funct); */
 border-color var(--transition-duration-funct);
 }
@@ -773,12 +778,11 @@ border-color var(--transition-duration-funct);
 .modal-close-btn:hover,
 .modal-close-btn:focus {
 border-color:#404bbf;
-background-color: #404bbf; 
 border: none; 
 }
 
 .close-btn-icon {
-    fill: black;
+    fill:  black;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -803,7 +807,7 @@ fill:  #ffffff;
     }
 
     .modal-field {
-        margin-bottom: 8px;
+        margin-bottom: 24px;
     }
     
     .modal-form {
@@ -817,7 +821,7 @@ fill:  #ffffff;
     font-family: inherit;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
@@ -846,6 +850,7 @@ transition: fill var(--transition-duration-funct);
     outline: transparent;
     padding-left: 38px;
     margin-bottom: 8px;
+    border-color: #4D5AE5; 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  }
 
@@ -862,29 +867,30 @@ fill: #4D5AE5;
 }
 
 
-.modal-form-commet  {
+.modal-form-comment  {
     resize: none;
     width: 100%;
-    height: 120%;
+    height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4) ;
     border-radius: 4px;
     font-family: inherit;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     background-color:  transparent;
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
     margin-bottom: 16px;
-    outline: none;
+    outline: transparent; 
 transition: border-color var(--transition-duration-funct);
 }
 
-.modal-form-commit:hover,
-.modal-form-commit:focus {
+.modal-form-comment:hover,
+.modal-form-comment:focus {
 outline: none;
-border-color: #4D5AE5;}
+border-color: #4D5AE5; 
+}
 
 .modal-form-policy {
     /* outline: 1px solid tomato; */
@@ -892,13 +898,40 @@ display: flex;
 font-family: inherit;
 font-weight: 400;
 font-size: 12px;
-line-height: 1.33;
+line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
-margin-right: 16px;
+
 margin-bottom: 24px;
 }
 
+.policy-note {
+    color:  #4D5AE5;
+    text-decoration: underline;
+}
+
+.modal-form-policy span {
+width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-block;
+align-items: center;
+justify-content: center;
+fill: transparent;
+}
+
+.modal-form-agree:checked + .modal-form-policy span {
+background-color: #404bbf;
+border: none;  
+fill: #F4F4FD;
+}
+
+
+
+/* 
 .modal-form-agree-check::before {
     content: "";
     display: block;
@@ -908,8 +941,8 @@ margin-bottom: 24px;
     cursor: pointer;
     border-radius: 4px;
     margin-right: 10px;
-    }
-    
+    } */
+/*     
     .modal-form-agree:checked + .modal-form-agree-check::before {
     background-image: url(../images/galochka.svg);
     background-color: #404BBF;
@@ -917,11 +950,11 @@ margin-bottom: 24px;
     background-repeat: no-repeat;
     border: none;
     outline: none;
-    }
-
+    } */
+/* 
     .modal-form-agree:focus + .modal-form-agree-check::before {
         outline: 2px solid rgba(0, 0, 255, 0.5);
-        }
+        } */
         
         .modal-form-button {
         display: flex;
