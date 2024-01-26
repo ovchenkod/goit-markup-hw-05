@@ -635,10 +635,11 @@ border-radius: 50%;
     color: #FFFFFF;
     }
     
-    .form-input-btn {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+.form-input-btn {
+display: flex;
+align-items: center;
+ gap: 24px;
+position: relative;
     }
     
     
@@ -704,7 +705,7 @@ border-radius: 50%;
     position: absolute;
     top: 10px;
     left: 0;
-    margin-left: 130px;
+    margin-left: 420px;
     fill: #fff;
     transition: fill var(--transition-duration-funct),
     }
@@ -804,7 +805,7 @@ margin-bottom: 16px;
     }
 
 .modal-field {
-margin-bottom: 24px;
+margin-bottom: 8px;
     }
     
 .modal-form {
@@ -912,6 +913,7 @@ text-decoration: underline;
 width: 16px;
 height: 16px;
 margin-right: 8px;
+display: inline-flex; 
 border: 1px solid rgba(46, 47, 66, 0.4); 
 border-radius: 2px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
