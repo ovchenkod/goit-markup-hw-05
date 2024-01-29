@@ -784,10 +784,10 @@ border: none;
 fill:  #ffffff;
 }
 
-.modal-close-btn:hover > .close-btn-icon,
+/* .modal-close-btn:hover > .close-btn-icon,
 .modal-close-btn:focus > .close-btn-icon {
 fill:  #ffffff;
-}
+} */
 
 
 /* "modal-form */ 
@@ -845,14 +845,12 @@ top: 50%;
 left: 16px;
 transform: translate(0, -50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-/* fill: black; */
  }
-
 
 .modal-form-input:hover, 
 .modal-form-input:focus {
-border-color: #4D5AE5;}
-
+border-color: #4D5AE5;
+}
 
 .modal-form-input:hover + .modal-input-icon,
 .modal-form-input:focus + .modal-input-icon {
@@ -929,11 +927,20 @@ border: none;
 fill: #F4F4FD;
 }  */
 
-.modal-form-agree:checked + label span {
+.checkbox-privacy:checked +  label span {
+    background-color: #404bbf;
+    border: none;  
+    fill: #F4F4FD;
+    } 
+    
+
+/* .modal-form-agree:checked + label span {
 background-color: #404bbf;
 border: none;  
 fill: #F4F4FD;
 }
+
+ */
 
 /* 
 .modal-form-agree-check::before {
