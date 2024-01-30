@@ -12,3 +12,6 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
+
+
+  <!-- <script src="./js/modal.js"></script>   -->
